@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>World Clocks</title>
+</head>
+
+
+<body>
+    <div class="logo">
+        <img src="Tea_Time.png" alt="">
+    
+     </div>
+    <p>Compare 3 Time Zones to organise to plan things.</p>   
+    <details>
+        <summary>
+            How to use
+        </summary>
+        <h5>Its really quite simple</h5>
+        <h6>in the time zone box insert an "IANA" time zone</h6>
+        <h6>Some examples:</h6>
+        <h6>1. Europe/London</h6>
+        <h6>2. Asia/Kolkata</h6>
+        <small>there is no chennai code unfortunatly</small>
+        <h6>3. America/Los_Angeles</h6>
+    </details>
+    <details>
+        <summary>Bugs:</summary>
+        <h4>Set time does work</h4>
+        <h6>NOTHING WORRKS SSSSS:(</h6>
+    </details>
+    <a href="https://github.com/Whatever-Green/Tea-Time">source code</a>
+    <div class="clock" id="clock1">
+        <div class="clock-time" id="time1">12:00:00</div>
+        <div class="clock-controls">
+            <input type="text" id="timezone1" placeholder="Timezone">
+            <button id="setTime1">Set Time</button>
+        </div>
+    </div>
+    <div class="clock" id="clock2">
+        <div class="clock-time" id="time2">12:00:00</div>
+        <div class="clock-controls">
+            <input type="text" id="timezone2" placeholder="Timezone">
+            <button id="setTime2">Set Time</button>
+        </div>
+    </div>
+    <div class="clock" id="clock3">
+        <div class="clock-time" id="time3">12:00:00</div>
+        <div class="clock-controls">
+            <input type="text" id="timezone3" placeholder="Timezone">
+            <button id="setTime3">Set Time</button>
+        </div>
+    </div>
+
+   <!-- ... (previous code) -->
+
+
+    <script src="script.js"></script>
+
+    <h5 class="issues"></h5>
+</body>
+</html>

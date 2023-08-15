@@ -1,0 +1,140 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5e463;
+    font-family: Arial, sans-serif;
+}
+
+.clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.clock-time {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.clock-controls {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+/* ... (previous code) */
+/* ... (previous code) */
+
+.analog-clocks {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Align the analogue clocks at the bottom */
+    margin-top: 20px;
+}
+
+.analog-clock {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative; /* Add positioning for clock hands */
+}
+
+.clock-hands {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* Prevent hands from blocking interaction */
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+    position: absolute;
+    transform-origin: center bottom;
+    transition: transform 0.5s cubic-bezier(0.4, 2.3, 0.6, 1);
+}
+
+.hour-hand {
+    width: 4px;
+    height: 30%;
+    background-color: #333;
+}
+
+.minute-hand {
+    width: 2px;
+    height: 40%;
+    background-color: #333;
+}
+
+.second-hand {
+    width: 1px;
+    height: 45%;
+    background-color: red;
+}
+
+/* Adjust the logo style */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo img {
+    max-width: 50%;
+    height: auto;
+    display: block; /* Ensures proper alignment and spacing */
+}
+
+/* ... (previous styles) */
+
+/* Adjust the body style */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #f5e463;
+    font-family: Arial, sans-serif;
+}
+p{
+    font-weight: 800;
+}
+small{
+    font-size: 10px;
+}
